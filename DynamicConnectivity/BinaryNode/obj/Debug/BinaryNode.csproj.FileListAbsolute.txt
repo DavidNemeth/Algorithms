@@ -1,0 +1,5 @@
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\BinaryNode\bin\Debug\BinaryNode.exe.config
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\BinaryNode\bin\Debug\BinaryNode.exe
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\BinaryNode\bin\Debug\BinaryNode.pdb
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\BinaryNode\obj\Debug\BinaryNode.exe
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\BinaryNode\obj\Debug\BinaryNode.pdb

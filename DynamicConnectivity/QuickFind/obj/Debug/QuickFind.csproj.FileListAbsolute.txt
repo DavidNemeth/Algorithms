@@ -1,0 +1,4 @@
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\QuickFind\bin\Debug\QuickFind.dll
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\QuickFind\bin\Debug\QuickFind.pdb
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\QuickFind\obj\Debug\QuickFind.dll
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\QuickFind\obj\Debug\QuickFind.pdb
