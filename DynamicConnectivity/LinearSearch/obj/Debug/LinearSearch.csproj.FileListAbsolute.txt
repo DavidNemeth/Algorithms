@@ -1,0 +1,6 @@
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\LinearSearch\bin\Debug\LinearSearch.exe.config
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\LinearSearch\bin\Debug\LinearSearch.exe
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\LinearSearch\bin\Debug\LinearSearch.pdb
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\LinearSearch\obj\Debug\LinearSearch.exe
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\LinearSearch\obj\Debug\LinearSearch.pdb
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\LinearSearch\obj\Debug\LinearSearch.csprojResolveAssemblyReference.cache

@@ -3,3 +3,4 @@ C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\BinaryNode\bin\Debug\
 C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\BinaryNode\bin\Debug\BinaryNode.pdb
 C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\BinaryNode\obj\Debug\BinaryNode.exe
 C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\BinaryNode\obj\Debug\BinaryNode.pdb
+C:\Users\David\Source\Repos\Algorithms\DynamicConnectivity\BinaryNode\obj\Debug\BinaryNode.csprojResolveAssemblyReference.cache

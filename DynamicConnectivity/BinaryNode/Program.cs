@@ -50,7 +50,7 @@ namespace BinaryNode
             Node n3 = new Node(3, null, null);
             Node n2 = new Node(2, n1, n3);
 
-            Console.WriteLine(Contains(n2, 3));
+            Console.WriteLine(Contains(n2, 3));            
         }
     }
 }
