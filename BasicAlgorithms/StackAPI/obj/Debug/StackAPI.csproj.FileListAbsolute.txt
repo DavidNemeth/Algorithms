@@ -1,0 +1,5 @@
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\StackAPI\bin\Debug\StackAPI.exe.config
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\StackAPI\bin\Debug\StackAPI.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\StackAPI\bin\Debug\StackAPI.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\StackAPI\obj\Debug\StackAPI.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\StackAPI\obj\Debug\StackAPI.pdb

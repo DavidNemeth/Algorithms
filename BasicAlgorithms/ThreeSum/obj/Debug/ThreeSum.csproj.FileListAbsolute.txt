@@ -3,3 +3,4 @@ C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ThreeSum\bin\Debug\ThreeS
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ThreeSum\bin\Debug\ThreeSum.pdb
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ThreeSum\obj\Debug\ThreeSum.exe
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ThreeSum\obj\Debug\ThreeSum.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ThreeSum\obj\Debug\ThreeSum.csprojResolveAssemblyReference.cache
