@@ -8,7 +8,7 @@ namespace ThreeSum
         static void Main(string[] args)
         {
             Random randy = new Random();
-            var inputs = new int[2000];
+            int[] inputs = new int[2000];
             for (int i = 0; i < inputs.Length; i++)
             {
                 inputs[i] = randy.Next(-50, 50);

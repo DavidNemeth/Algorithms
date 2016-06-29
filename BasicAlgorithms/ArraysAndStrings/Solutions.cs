@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ArraysAndStrings
 {
-    public static class Solutions
+    public class Solutions
     {
-        public static bool IsUnique(string input)
+        public bool IsUnique(string input)
         {
             bool[] array = new bool[512];
             foreach (var item in input)
@@ -25,7 +25,7 @@ namespace ArraysAndStrings
             return true;
         }
 
-        public static bool Permutation(string string1, string string2)
+        public bool Permutation(string string1, string string2)
         {
             if (string1.Length != string2.Length)
             {
@@ -42,7 +42,7 @@ namespace ArraysAndStrings
             return true;
         }
 
-        public static long PermutationCount(string input)
+        public long PermutationCount(string input)
         {
             int count = 0;
             bool[] barray = new bool[512];
@@ -63,6 +63,6 @@ namespace ArraysAndStrings
                 result *= i;
             }
             return result;
-        }
+        }        
     }
 }

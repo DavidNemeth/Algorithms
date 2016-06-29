@@ -10,8 +10,11 @@ namespace ArraysAndStrings
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine(Solutions.IsUnique("asdfghjklqwertzuiopőú"));
-            Console.WriteLine(Solutions.PermutationCount("123456789100asdfghhjxyacyqqwe"));
+            Solutions sol = new Solutions();
+
+            Console.WriteLine(sol.IsUnique("asdfghjklqwertzuiopőú"));
+            Console.WriteLine(sol.PermutationCount("123456789100asdfghhjxyacyqqwe"));
+            Console.WriteLine("Mr John Smith     ".GenerateSlug());
         }
     }
 }
