@@ -1,0 +1,5 @@
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\UniqueString\bin\Debug\UniqueString.exe.config
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\UniqueString\bin\Debug\UniqueString.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\UniqueString\bin\Debug\UniqueString.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\UniqueString\obj\Debug\UniqueString.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\UniqueString\obj\Debug\UniqueString.pdb

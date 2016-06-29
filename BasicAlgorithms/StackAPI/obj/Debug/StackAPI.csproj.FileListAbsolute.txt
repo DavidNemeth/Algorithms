@@ -3,3 +3,4 @@ C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\StackAPI\bin\Debug\StackA
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\StackAPI\bin\Debug\StackAPI.pdb
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\StackAPI\obj\Debug\StackAPI.exe
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\StackAPI\obj\Debug\StackAPI.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\StackAPI\obj\Debug\StackAPI.csprojResolveAssemblyReference.cache

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeSum", "ThreeSum\ThreeS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAPI", "StackAPI\StackAPI.csproj", "{DE846353-81CD-4E57-B1DD-ED642460236D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysAndStrings", "ArraysAndStrings\ArraysAndStrings.csproj", "{D6B37178-E4D8-4DF7-A68B-8A453FDE4C93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DE846353-81CD-4E57-B1DD-ED642460236D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE846353-81CD-4E57-B1DD-ED642460236D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE846353-81CD-4E57-B1DD-ED642460236D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6B37178-E4D8-4DF7-A68B-8A453FDE4C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B37178-E4D8-4DF7-A68B-8A453FDE4C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B37178-E4D8-4DF7-A68B-8A453FDE4C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B37178-E4D8-4DF7-A68B-8A453FDE4C93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
