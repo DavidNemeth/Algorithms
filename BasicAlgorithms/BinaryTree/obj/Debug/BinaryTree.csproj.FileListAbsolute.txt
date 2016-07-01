@@ -1,0 +1,4 @@
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\BinaryTree\bin\Debug\BinaryTree.dll
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\BinaryTree\bin\Debug\BinaryTree.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\BinaryTree\obj\Debug\BinaryTree.dll
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\BinaryTree\obj\Debug\BinaryTree.pdb

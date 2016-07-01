@@ -4,3 +4,5 @@ C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\bin\Debu
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\obj\Debug\ArraysAndStrings.exe
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\obj\Debug\ArraysAndStrings.pdb
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\obj\Debug\ArraysAndStrings.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\bin\Debug\BinaryTree.dll
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\bin\Debug\BinaryTree.pdb
