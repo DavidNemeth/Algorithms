@@ -24,16 +24,12 @@ namespace ArraysAndStrings
             return true;
         }
 
-        //O(n^2)
+        //O(n)
         public bool IsPalindromePermutation(string input)
         {
-            bool unevenFound = false;
-            char uneven = ' ';
-
             int count = 0;
-
-            //Remove whitespace from the string.
             string ret = "";
+
             foreach (var item in input)
             {
                 if (char.IsLetterOrDigit(item))
@@ -42,34 +38,22 @@ namespace ArraysAndStrings
                 }
             }
             ret = ret.ToLower();
-            // Check each letter to see if there's an even number of it.
-            for (int i = 0; i < ret.Length; i++)
+
+            var countkey = ret
+                .GroupBy(x => x)
+                .OrderBy(c => c.Key)
+                .ToDictionary(grp => grp.Key, grp => grp.Count());
+            foreach (var item in countkey)
             {
-                count = 0;
-                for (int j = 0; j < ret.Length; j++)
+                if (item.Value % 2 == 1)
                 {
-                    if (ret[j] == ret[i])
-                    {
-                        count++;
-                    }
-                }
-                // If there was an odd number of those entries
-                // and an uneven is already found, then a palindrome
-                // is impossible, so return false.
-                if (count % 2 == 1)
-                {
-                    if (unevenFound == true && uneven != ret[i])
-                    {
-                        return false;
-                    }
-                    else
-                    {
-                        unevenFound = true;
-                        uneven = ret[i];   
-                    }
+                    count++;
                 }
             }
-            // If we made it all the way through that loop without returning false, then
+            if (count > 1)
+            {
+                return false;
+            }
             return true;
         }
 
