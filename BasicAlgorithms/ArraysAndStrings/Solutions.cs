@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace ArraysAndStrings
 {
@@ -162,6 +163,35 @@ namespace ArraysAndStrings
                         );
                 }
             return distances[lengthA, lengthB];
+        }
+
+        public string StringCompression(string input)
+        {//aabcccccaaa  , //a2b1c5a3
+            StringBuilder ret = new StringBuilder();
+
+            char currentChar = input[0];
+            ret.Append(currentChar);
+
+            int count = 1;
+            for (int i = 1; i < input.Length; i++)
+            {
+                char nextchar = input[i];
+
+                if (currentChar == nextchar)
+                {
+                    count++;
+                }
+                else
+                {
+                    ret.Append(count);
+                    currentChar = nextchar;
+                    count = 1;
+                    ret.Append(currentChar);
+                }
+            }
+            ret.Append(count);
+
+            return ret.Length > input.Length ? input : ret.ToString();
         }
     }
 }

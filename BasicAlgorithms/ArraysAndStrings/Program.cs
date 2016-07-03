@@ -12,7 +12,8 @@ namespace ArraysAndStrings
             //Console.WriteLine(sol.PermutationCount("123456789100asdfghhjxyacyqqwe"));
             //Console.WriteLine("Mr John Smith     ".GenerateSlug());
             //Console.WriteLine(sol.IsPalindromePermutation("Tact Coa "));
-            Console.WriteLine(sol.Distance("pale", "ple"));
+            //Console.WriteLine(sol.Distance("pale", "ple"));
+            Console.WriteLine(sol.StringCompression("aabcccccaaa"));
         }
     }
 }
