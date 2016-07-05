@@ -166,7 +166,7 @@ namespace ArraysAndStrings
         }
 
         public string StringCompression(string input)
-        {//aabcccccaaa  , //a2b1c5a3
+        {
             StringBuilder ret = new StringBuilder();
 
             char currentChar = input[0];
@@ -192,6 +192,11 @@ namespace ArraysAndStrings
             ret.Append(count);
 
             return ret.Length > input.Length ? input : ret.ToString();
+        }
+
+        public int[] Inversion(int[] iArr)
+        {
+            throw new NotImplementedException();
         }
     }
 }

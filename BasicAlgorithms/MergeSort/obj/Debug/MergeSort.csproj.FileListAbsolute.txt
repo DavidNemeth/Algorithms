@@ -1,0 +1,5 @@
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\MergeSort\bin\Debug\MergeSort.dll
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\MergeSort\bin\Debug\MergeSort.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\MergeSort\obj\Debug\MergeSort.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\MergeSort\obj\Debug\MergeSort.dll
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\MergeSort\obj\Debug\MergeSort.pdb
