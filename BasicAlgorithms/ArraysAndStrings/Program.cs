@@ -18,11 +18,7 @@ namespace ArraysAndStrings
             //Console.WriteLine(sol.Distance("pale", "ple"));
             //Console.WriteLine(sol.StringCompression("aabcccccaaa"));
             //Console.WriteLine(sol.Inversion(iArr));
-            MergeSort.MSort(mSort);
-            foreach (var item in mSort)
-            {
-                Console.WriteLine(item);
-            }
+            Console.WriteLine(sol.Inversion(iArr));
         }
     }
 }

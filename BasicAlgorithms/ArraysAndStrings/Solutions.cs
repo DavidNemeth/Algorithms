@@ -100,7 +100,7 @@ namespace ArraysAndStrings
         }
 
         //O(n)
-        private bool IsPalindrome(string input)
+        public bool IsPalindrome(string input)
         {
             string result = "";
             foreach (var item in input)
@@ -120,8 +120,8 @@ namespace ArraysAndStrings
             return false;
         }
 
-        //O(n^n)?
-        private List<string> Permutations(string input)
+        //O(n!)
+        public List<string> Permutations(string input)
         {
             var ret = new List<string>();
             if (input.Length == 1)
@@ -194,9 +194,47 @@ namespace ArraysAndStrings
             return ret.Length > input.Length ? input : ret.ToString();
         }
 
-        public int[] Inversion(int[] iArr)
+        //O(n*logn)
+        public int Inversion(int[] arr)
         {
-            throw new NotImplementedException();
+            if (arr.Count() < 2)
+                return 0;
+
+            int m = (arr.Count() + 1) / 2;
+            int[] left = arr.Take(m).ToArray();
+            int[] right = arr.Skip(m).ToArray();
+
+            return Inversion(left) + Inversion(right) + merge(arr, left, right);
+        }
+
+        private int merge(int[] arr, int[] left, int[] right)
+        {
+            int i = 0; int j = 0; int count = 0;
+            while (i < left.Length || j < right.Length)
+            {
+                if (i == left.Length)
+                {
+                    arr[i + j] = right[j];
+                    j++;
+                }
+                else if (j == right.Length)
+                {
+                    arr[i + j] = left[i];
+                    i++;
+                }
+                else if (left[i] <= right[j])
+                {
+                    arr[i + j] = left[i];
+                    i++;
+                }
+                else
+                {
+                    arr[i + j] = right[j];
+                    count += left.Length - i;
+                    j++;
+                }
+            }
+            return count;
         }
     }
 }

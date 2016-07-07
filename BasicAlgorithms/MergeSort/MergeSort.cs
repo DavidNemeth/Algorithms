@@ -18,19 +18,23 @@ namespace MergeSorting
             {
                 if (i > mid)
                 {
-                    a[k] = aux[j++];
+                    a[k] = aux[j];
+                    j++;
                 }
                 else if (j > hi)
                 {
-                    a[k] = aux[i++];
+                    a[k] = aux[i];
+                    i++;
                 }
                 else if (aux[j].CompareTo(aux[i]) < 0)
                 {
-                    a[k] = aux[j++];
+                    a[k] = aux[j];
+                    j++;
                 }
                 else
                 {
-                    a[k] = aux[i++];
+                    a[k] = aux[i];
+                    i++;
                 }
             }
         }
