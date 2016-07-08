@@ -200,7 +200,7 @@ namespace ArraysAndStrings
             if (arr.Count() < 2)
                 return 0;
 
-            int m = (arr.Count() + 1) / 2;
+            int m = (arr.Length + 1) / 2;
             int[] left = arr.Take(m).ToArray();
             int[] right = arr.Skip(m).ToArray();
 

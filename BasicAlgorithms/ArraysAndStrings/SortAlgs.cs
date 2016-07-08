@@ -16,7 +16,7 @@ namespace ArraysAndStrings
                 {
                     if (input[j] > input[j + 1])
                     {
-                        swapValues(ref input[j],ref input[j + 1]);
+                        swapValues(ref input[j], ref input[j + 1]);
                     }
                 }
             }
@@ -27,6 +27,23 @@ namespace ArraysAndStrings
             int temp = indexOne;
             indexOne = indexTwo;
             indexTwo = temp;
+        }
+
+        public void SelectionSort(int[] input)
+        {
+            for (int x = 0; x < input.Length; x++)
+            {
+                int minimum = x;
+
+                for (int y = x; y < input.Length; y++)
+                {
+                    if (input[minimum] > input[y])
+                    {
+                        minimum = y;
+                    }
+                }
+                swapValues(ref input[x], ref input[minimum]);
+            }
         }
     }
 }
