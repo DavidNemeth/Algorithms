@@ -8,3 +8,5 @@ C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\bin\Debu
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\bin\Debug\BinaryTree.pdb
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\bin\Debug\MergeSort.dll
 C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\bin\Debug\MergeSort.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\bin\Debug\Extensions.dll
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\ArraysAndStrings\bin\Debug\Extensions.pdb

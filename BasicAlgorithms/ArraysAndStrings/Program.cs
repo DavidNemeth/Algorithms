@@ -19,7 +19,6 @@ namespace ArraysAndStrings
                 Console.WriteLine(item);
             }
             search.BinarySearch(iArr, 6);
-
         }
     }
 }
