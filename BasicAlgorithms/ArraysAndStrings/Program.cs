@@ -13,7 +13,7 @@ namespace ArraysAndStrings
             Solutions sol = new Solutions();
             SortAlgs sort = new SortAlgs();
             SearchAlgs search = new SearchAlgs();
-            sort.SelectionSort(iArr);
+            sort.InsertionSort(iArr);
             foreach (var item in iArr)
             {
                 Console.WriteLine(item);

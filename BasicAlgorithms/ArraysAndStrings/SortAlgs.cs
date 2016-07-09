@@ -45,5 +45,20 @@ namespace ArraysAndStrings
                 swapValues(ref input[x], ref input[minimum]);
             }
         }
+
+        public void InsertionSort(int[] input)
+        {
+            for (int i = 1; i < input.Length; i++)
+            {
+                int j = i;
+                int toInsert = input[i];
+                while ((j > 0) && (input[j - 1] > toInsert))
+                {
+                    input[j] = input[j - 1];
+                    j--;
+                }
+                input[j] = toInsert;
+            }
+        }
     }
 }
