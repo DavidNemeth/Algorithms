@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -238,14 +239,18 @@ namespace ArraysAndStrings
         }
         public IList<string> FindRepeatedDnaSequences(string s)
         {
-            var ret = new List<string>();
-            var hash = new Dictionary<char, int>() { { 'A', 1 }, { 'C', 2 }, { 'G', 3 }, { 'T', 4 } };
-            var TenLengthString = new Dictionary<long, int>();
-            for (int i = 0; i < s.Length-9; i++)
+            var ret = new HashSet<string>();
+            if (s.Length < 10)
             {
-                long rollinghash = 0;
+                return ret.ToList();
+            }
+            var hash = new Dictionary<char, int>() { { 'A', 1 }, { 'C', 2 }, { 'G', 3 }, { 'T', 4 } };
+            var TenLengthString = new Dictionary<int, int>();
+            for (int i = 0; i < s.Length - 9; i++)
+            {
+                int rollinghash = 0;
                 for (var j = 0; j < 10; j++)
-                {                    
+                {
                     rollinghash = hash[s[i + j]] + rollinghash * 10;
                 }
 
@@ -258,7 +263,25 @@ namespace ArraysAndStrings
                     TenLengthString.Add(rollinghash, i);
                 }
             }
-            return ret;
+            return ret.ToList();
+        }
+        public int AddShift(int a, int b)
+        {
+            if (b == 0)
+            {
+                return a;
+            }
+            if (a == 0)
+            {
+                return b;
+            }
+            while (b != 0)
+            {
+                int carry = a & b;                
+                a = a ^ b;         
+                b = carry << 1;
+            }
+            return a;
         }
     }
 }

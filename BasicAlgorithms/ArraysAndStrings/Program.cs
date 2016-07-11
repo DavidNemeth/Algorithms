@@ -13,10 +13,7 @@ namespace ArraysAndStrings
             Solutions sol = new Solutions();
             SortAlgs sort = new SortAlgs();
             SearchAlgs search = new SearchAlgs();
-            foreach (var item in sol.FindRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"))
-            {
-                Console.WriteLine(item);
-            }
+            Console.WriteLine(sol.CanWinNim(2, 3));
         }
     }
 }
