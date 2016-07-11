@@ -13,12 +13,10 @@ namespace ArraysAndStrings
             Solutions sol = new Solutions();
             SortAlgs sort = new SortAlgs();
             SearchAlgs search = new SearchAlgs();
-            sort.InsertionSort(iArr);
-            foreach (var item in iArr)
+            foreach (var item in sol.FindRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"))
             {
                 Console.WriteLine(item);
             }
-            search.BinarySearch(iArr, 6);
         }
     }
 }

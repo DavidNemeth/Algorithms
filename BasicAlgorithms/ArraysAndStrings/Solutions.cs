@@ -236,5 +236,29 @@ namespace ArraysAndStrings
             }
             return count;
         }
+        public IList<string> FindRepeatedDnaSequences(string s)
+        {
+            var ret = new List<string>();
+            var hash = new Dictionary<char, int>() { { 'A', 1 }, { 'C', 2 }, { 'G', 3 }, { 'T', 4 } };
+            var TenLengthString = new Dictionary<long, int>();
+            for (int i = 0; i < s.Length-9; i++)
+            {
+                long rollinghash = 0;
+                for (var j = 0; j < 10; j++)
+                {                    
+                    rollinghash = hash[s[i + j]] + rollinghash * 10;
+                }
+
+                if (TenLengthString.ContainsKey(rollinghash))
+                {
+                    ret.Add(s.Substring(i, 10));
+                }
+                else
+                {
+                    TenLengthString.Add(rollinghash, i);
+                }
+            }
+            return ret;
+        }
     }
 }
