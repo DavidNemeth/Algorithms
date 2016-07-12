@@ -8,6 +8,29 @@ namespace ArraysAndStrings
 {
     public class LeetCode
     {
+        //126
+        public int SingleNumber(int[] nums)
+        {
+            var dict = new Dictionary<int, int>();
+            foreach (var item in nums)
+            {
+                if (!dict.ContainsKey(item))
+                {
+                    dict.Add(item, 1);
+                }
+                else
+                {
+                    dict[item] += 1;
+                }
+            }
+            int ret = 0;
+            if (dict.ContainsValue(1))
+            {
+                ret = dict.FirstOrDefault(x => x.Value == 1).Key;
+                return ret;
+            }
+            return 0;
+        }
         //371
         public int AddShift(int a, int b)
         {
