@@ -14,7 +14,12 @@ namespace ArraysAndStrings
             LeetCode leet = new LeetCode();
             SortAlgs sort = new SortAlgs();
             SearchAlgs search = new SearchAlgs();
-
+            string kat = "kat".Reverse();
+            int i = 3;
+            if (i.Match("[1-5]"))
+            {
+                Console.WriteLine(kat);
+            }
             Console.WriteLine(leet.SingleNumber(iArr));
         }
     }
