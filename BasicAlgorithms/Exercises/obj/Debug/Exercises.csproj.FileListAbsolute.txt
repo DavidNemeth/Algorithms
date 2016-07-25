@@ -1,0 +1,8 @@
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Exercises\bin\Debug\Exercises.exe.config
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Exercises\bin\Debug\Exercises.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Exercises\bin\Debug\Exercises.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Exercises\obj\Debug\Exercises.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Exercises\obj\Debug\Exercises.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Exercises\obj\Debug\Exercises.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Exercises\bin\Debug\Extensions.dll
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Exercises\bin\Debug\Extensions.pdb
