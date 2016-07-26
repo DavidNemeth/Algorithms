@@ -1,5 +1,7 @@
 ﻿using System;
 using Extensions;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Exercises
 {
@@ -45,6 +47,11 @@ namespace Exercises
             }
             new Random().Shuffle(fiftyfive);
             foreach (var item in fiftyfive)
+            {
+                Console.WriteLine(item);
+            }
+
+            foreach (var item in rein.Permutations("catdog"))
             {
                 Console.WriteLine(item);
             }

@@ -16,7 +16,7 @@ namespace Extensions
             }
         }
 
-        public static void Shuffle<T> (this Random rng, T[] array)
+        public static void Shuffle<T>(this Random rng, T[] array)
         {
             int n = array.Length;
             while (n > 1)
@@ -26,6 +26,14 @@ namespace Extensions
                 array[n] = array[k];
                 array[k] = temp;
             }
+        }
+
+        public static IEnumerable<IEnumerable<T>> GetCombinations<T>(this IEnumerable<T> list, int length)
+        {
+            if (length == 1) return list.Select(t => new T[] { t });
+
+            return GetCombinations(list, length - 1)
+                .SelectMany(t => list, (t1, t2) => t1.Concat(new T[] { t2 }));
         }
     }
 }

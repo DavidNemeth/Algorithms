@@ -105,6 +105,27 @@ namespace Exercises
         {
             var hash = new HashSet<float>(values);
             return hash.Count == values.Length;
-        }        
+        }
+
+        public List<string> Permutations(string input)
+        {
+            var ret = new List<string>();
+            if (input.Length == 1)
+            {
+                ret.Add(input);
+            }
+            else
+            {
+                foreach (var item in input)
+                {
+                    var perms = input.Remove(input.IndexOf(item), 1);
+                    foreach (var perm in Permutations(perms))
+                    {
+                        ret.Add(item + perm);
+                    }
+                }
+            }
+            return ret;
+        }
     }
 }
