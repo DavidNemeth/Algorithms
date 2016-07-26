@@ -105,6 +105,6 @@ namespace Exercises
         {
             var hash = new HashSet<float>(values);
             return hash.Count == values.Length;
-        }
+        }        
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using Extensions;
 
 namespace Exercises
 {
@@ -36,6 +37,17 @@ namespace Exercises
 
             float[] fArr = new float[10] { 0, 1, 2F, 3, 4.23F, 2.32F, 6, 2.1F, 8, 4.23F };
             Console.WriteLine(rein.Distinct(fArr));
+
+            int[] fiftyfive = new int[52];
+            for (int i = 1; i < 53; i++)
+            {
+                fiftyfive[i-1] = i;
+            }
+            new Random().Shuffle(fiftyfive);
+            foreach (var item in fiftyfive)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
