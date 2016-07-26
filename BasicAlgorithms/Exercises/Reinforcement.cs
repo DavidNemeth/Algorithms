@@ -26,13 +26,13 @@ namespace Exercises
         {
             return (i & 1) == 0;
         }
-        public int SumAll(int n)
+        public int SumSquareAll(int n)
         {
             int x = 0;
             int total = 0;
             while (x <= n)
             {
-                total += x;
+                total += x*x;
                 x++;
             }
             return total;
