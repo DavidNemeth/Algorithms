@@ -90,5 +90,21 @@ namespace Exercises
             }
             return ret;
         }
+
+        public int Div(int x, int ret = 0)
+        {
+            if (x >= 2)
+            {
+                x = x / 2;
+                return Div(x, ++ret);
+            }
+            return ret;
+        }
+
+        public bool Distinct(float[] values)
+        {
+            var hash = new HashSet<float>(values);
+            return hash.Count == values.Length;
+        }
     }
 }

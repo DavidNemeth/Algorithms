@@ -30,6 +30,12 @@ namespace Exercises
                 Console.WriteLine(item);
             }
             Console.WriteLine(rein.LargestInt(rev));
+            Console.WriteLine();
+            Console.WriteLine(rein.Div(2000));
+            Console.WriteLine();
+
+            float[] fArr = new float[10] { 0, 1, 2F, 3, 4.23F, 2.32F, 6, 2.1F, 8, 4.23F };
+            Console.WriteLine(rein.Distinct(fArr));
         }
     }
 }
