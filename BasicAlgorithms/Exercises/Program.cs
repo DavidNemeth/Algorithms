@@ -25,36 +25,11 @@ namespace Exercises
             wallet[0].Charge(3000);
             wallet[0].Charge(1000);
             wallet[0].Limit = 100;
-            CreditCard.PrintSummary(wallet[1]);
+            wallet[2].PrintSummary();
             Console.WriteLine();
-            int[] rev = rein.ReverseInts(new int[10] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
-            foreach (var item in rev)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine(rein.LargestInt(rev));
-            Console.WriteLine();
-            Console.WriteLine(rein.Div(2000));
-            Console.WriteLine();
+            Console.WriteLine(wallet[0].ToString());
 
-            float[] fArr = new float[10] { 0, 1, 2F, 3, 4.23F, 2.32F, 6, 2.1F, 8, 4.23F };
-            Console.WriteLine(rein.Distinct(fArr));
 
-            int[] fiftyfive = new int[52];
-            for (int i = 1; i < 53; i++)
-            {
-                fiftyfive[i-1] = i;
-            }
-            new Random().Shuffle(fiftyfive);
-            foreach (var item in fiftyfive)
-            {
-                Console.WriteLine(item);
-            }
-
-            foreach (var item in rein.Permutations("catdog"))
-            {
-                Console.WriteLine(item);
-            }
         }
     }
 }

@@ -80,13 +80,19 @@ namespace Exercises
             return true;
         }
 
-        public static void PrintSummary(CreditCard card)
+        public void PrintSummary()
         {
-            Console.WriteLine("Customer: {0}", card.Customer);
-            Console.WriteLine("Bank: {0}", card.Bank);
-            Console.WriteLine("Account: {0}", card.Account);
-            Console.WriteLine("Limit: {0}", card.Limit);
-            Console.WriteLine("Balance: {0}", card.Balance);
+            Console.WriteLine("Customer: {0}", Customer);
+            Console.WriteLine("Bank: {0}", Bank);
+            Console.WriteLine("Account: {0}", Account);
+            Console.WriteLine("Limit: {0}", Limit);
+            Console.WriteLine("Balance: {0}", Balance);
+        }
+
+        public override string ToString()
+        {
+            return Customer.ToString() +"\n"+ Bank.ToString() + "\n" + Account.ToString() 
+                + "\n" + Limit.ToString() + "\n" + Balance.ToString();
         }
     }
 }
