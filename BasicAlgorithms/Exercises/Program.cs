@@ -6,11 +6,11 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            Reinforcement re = new Reinforcement();
-            Console.WriteLine(re.SumSquareAll(6));
+            Reinforcement rein = new Reinforcement();
+            Console.WriteLine(rein.SumSquareAll(6));
             Flower rose = new Flower(1, Flower.Flowers.Rose);
-            rose.Quantity = 3;            
-            Console.WriteLine("flower name: {0} \nquantity: {1} \nTotal Price: {2}", rose._Flower, rose.Quantity, rose.Price );
+            rose.Quantity = 3;
+            Console.WriteLine("flower name: {0} \nquantity: {1} \nTotal Price: {2}", rose._Flower, rose.Quantity, rose.Price);
             Console.WriteLine();
 
             CreditCard[] wallet = new CreditCard[3]
@@ -23,6 +23,13 @@ namespace Exercises
             wallet[0].Charge(1000);
             wallet[0].Limit = 100;
             CreditCard.PrintSummary(wallet[1]);
+            Console.WriteLine();
+            int[] rev = rein.ReverseInts(new int[10] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            foreach (var item in rev)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine(rein.LargestInt(rev));
         }
     }
 }
