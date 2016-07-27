@@ -131,7 +131,7 @@ namespace Exercises
         public static void MistakesWereMade()
         {
             string typo = "I will never do this again";
-            Random randy = new Random(typo.Count());
+            Random randy = new Random();
             string[] punishment = new string[100];
             for (int i = 0; i < punishment.Length; i++)
             {
@@ -152,6 +152,37 @@ namespace Exercises
                 Console.WriteLine(item);
             }
             Console.WriteLine(count + " mistakes");
+        }
+
+        public static void BirthDayParadox(int numberOfPeople)
+        {
+            int count = 0;
+            Random randy = new Random();
+            int testQuantity = 100000;
+            for (int x = 0; x < testQuantity; x++)
+            {
+                bool[] bdays = new bool[365];
+                int match = 0;
+                for (int i = 1; i <= numberOfPeople; i++)
+                {
+                    int temp = randy.Next(365);
+                    if (bdays[temp])
+                    {
+                        match++;
+                        break;
+                    }
+                    else
+                    {
+                        bdays[temp] = true;
+                    }
+                }
+                if (match == 1)
+                {
+                    count++;
+                }
+            }
+            double result = (double)count / (double)testQuantity;
+            Console.WriteLine("{0:P2}",result);
         }
     }
 }
