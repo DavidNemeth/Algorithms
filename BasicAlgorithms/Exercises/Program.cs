@@ -27,10 +27,8 @@ namespace Exercises
             wallet[0].Limit = 100;
             wallet[2].PrintSummary();
             Console.WriteLine();
-            Console.WriteLine(wallet[0].ToString());
-
-
-        }
+            Console.WriteLine(wallet[0].ToString());            
+        }        
     }
 }
 

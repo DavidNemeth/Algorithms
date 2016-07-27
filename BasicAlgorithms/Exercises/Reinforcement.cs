@@ -127,5 +127,31 @@ namespace Exercises
             }
             return ret;
         }
+
+        public static void MistakesWereMade()
+        {
+            string typo = "I will never do this again";
+            Random randy = new Random(typo.Count());
+            string[] punishment = new string[100];
+            for (int i = 0; i < punishment.Length; i++)
+            {
+                if (i % 15 == 0)
+                {
+                    string temp = typo.Remove(randy.Next(typo.Length), 1);
+                    punishment[i] = temp;
+                }
+                else
+                {
+                    punishment[i] = typo;
+                }
+            }
+            punishment.Shuffle();
+            int count = punishment.Distinct().Count();
+            foreach (var item in punishment)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine(count + " mistakes");
+        }
     }
 }

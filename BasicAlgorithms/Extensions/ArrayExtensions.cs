@@ -16,8 +16,9 @@ namespace Extensions
             }
         }
 
-        public static void Shuffle<T>(this Random rng, T[] array)
+        public static void Shuffle<T>(this T[] array)
         {
+            Random rng = new Random();
             int n = array.Length;
             while (n > 1)
             {
