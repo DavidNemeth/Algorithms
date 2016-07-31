@@ -2,11 +2,12 @@
 
 namespace Progression
 {
-    public class BProgression
+    public abstract class BProgression
     {
-        protected long current = 0;
+        protected long current;
 
         public BProgression()
+            : this(0)
         {
         }
 
@@ -22,11 +23,6 @@ namespace Progression
             return ret;
         }
 
-        protected virtual void Advance()
-        {
-            current++;
-        }
-
         public void PrintProgression(int n)
         {
             Console.Write(NextValue());
@@ -36,5 +32,7 @@ namespace Progression
             }
             Console.WriteLine();
         }
+
+        protected abstract void Advance();
     }
 }

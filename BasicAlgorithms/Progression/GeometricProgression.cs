@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-namespace Progression
+﻿namespace Progression
 {
     public class GeometricProgression : BProgression
     {
