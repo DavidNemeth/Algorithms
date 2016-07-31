@@ -8,75 +8,41 @@ namespace Exercises
 {
     public class CreditCard
     {
-        private string customer;
-        public string Customer
+        public string Customer { get; set; }
+        public string Bank { get; set; }
+        public string Account { get; set; }
+        public double Balance { get; set; }
+        public double Limit { get; set; }
+
+        public CreditCard(string customer, string bank, string account, double limit, double balance)
         {
-            get { return customer; }
-            set { customer = value; }
-        }
-        private string bank;
-        public string Bank
-        {
-            get { return bank; }
-            set { bank = value; }
-        }
-        private string account;
-        public string Account
-        {
-            get { return account; }
-            set { account = value; }
-        }
-        private int limit;
-        public int Limit
-        {
-            get { return limit; }
-            set
-            {
-                if (value < balance)
-                {
-                    Console.WriteLine("Can not set lower limit than current balance");
-                }
-                else
-                {
-                    limit = value;
-                }                
-            }
-        }
-        private double balance;
-        public double Balance
-        {
-            get { return balance; }
-            set { balance = value; }
+            Customer = customer;
+            Bank = bank;
+            Account = account;
+            Limit = limit;
+            Balance = balance;
         }
 
-        public CreditCard(string customer, string bank, string account, int limit, double balance)
+        public virtual bool Charge(double amount)
         {
-            this.customer = customer;
-            this.bank = bank;
-            this.account = account;
-            this.limit = limit;
-            this.balance = balance;
-        }
-
-        public bool Charge(double amount)
-        {
-            if (amount + balance > limit)
+            if (amount + Balance > Limit)
             {
-                Console.WriteLine("Charging of {0} account failed due to limit", this.account);
+                Console.WriteLine("Charging of {0} account failed due to limit", this.Account);
                 return false;
             }
-            balance += amount;
+            Balance += amount;
+            Console.WriteLine("Charged {0:C} from account {1}", amount, this.Account);
             return true;
         }
 
         public bool Payment(double amount)
         {
-            if (amount > balance)
+            if (amount > Balance)
             {
-                Console.WriteLine("Payment of {0} account failed, insufficient balance", account);
+                Console.WriteLine("Payment of {0} account failed, insufficient balance", Account);
                 return false;
             }
-            balance -= amount;
+            Balance -= amount;
             return true;
         }
 
@@ -85,14 +51,15 @@ namespace Exercises
             Console.WriteLine("Customer: {0}", Customer);
             Console.WriteLine("Bank: {0}", Bank);
             Console.WriteLine("Account: {0}", Account);
-            Console.WriteLine("Limit: {0}", Limit);
-            Console.WriteLine("Balance: {0}", Balance);
+            Console.WriteLine("Limit: {0:C}", Limit);
+            Console.WriteLine("Balance: {0:C}", Balance);
+            Console.WriteLine();
         }
 
         public override string ToString()
         {
-            return Customer.ToString() +"\n"+ Bank.ToString() + "\n" + Account.ToString() 
-                + "\n" + Limit.ToString() + "\n" + Balance.ToString();
+            return Customer.ToString() + "\n" + Bank.ToString() + "\n" + Account.ToString()
+                + "\n" + Limit.ToString("C") + "/" + Balance.ToString("C") + "\n";
         }
     }
 }
