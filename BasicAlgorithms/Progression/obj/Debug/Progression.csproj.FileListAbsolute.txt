@@ -1,0 +1,6 @@
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Progression\bin\Debug\Progression.exe.config
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Progression\bin\Debug\Progression.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Progression\bin\Debug\Progression.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Progression\obj\Debug\Progression.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Progression\obj\Debug\Progression.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Progression\obj\Debug\Progression.csprojResolveAssemblyReference.cache
