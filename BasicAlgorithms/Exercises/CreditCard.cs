@@ -9,6 +9,7 @@ namespace Exercises
     public class CreditCard
     {
         public string Customer { get; set; }
+        public int Chargetrashhold { get; set; }
         public string Bank { get; set; }
         public string Account { get; set; }
         public double Balance { get; set; }
@@ -37,6 +38,11 @@ namespace Exercises
 
         public bool Payment(double amount)
         {
+            if (amount < 0)
+            {
+                Console.WriteLine("Can not process negative payment\n");
+                return false;
+            }
             if (amount > Balance)
             {
                 Console.WriteLine("Payment of {0} account failed, insufficient balance", Account);
