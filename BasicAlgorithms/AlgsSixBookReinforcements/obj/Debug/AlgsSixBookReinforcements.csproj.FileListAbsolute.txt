@@ -1,0 +1,7 @@
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\AlgsSixBookReinforcements\bin\Debug\AlgsSixBookReinforcements.exe.config
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\AlgsSixBookReinforcements\bin\Debug\AlgsSixBookReinforcements.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\AlgsSixBookReinforcements\bin\Debug\AlgsSixBookReinforcements.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\AlgsSixBookReinforcements\bin\Debug\Extensions.dll
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\AlgsSixBookReinforcements\bin\Debug\Extensions.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\AlgsSixBookReinforcements\obj\Debug\AlgsSixBookReinforcements.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\AlgsSixBookReinforcements\obj\Debug\AlgsSixBookReinforcements.pdb

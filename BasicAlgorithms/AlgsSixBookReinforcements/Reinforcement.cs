@@ -3,9 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Exercises
+namespace AlgsSixBookReinforcements
 {
     public class Reinforcement
     {
@@ -161,7 +162,7 @@ namespace Exercises
             int testQuantity = 123456;
             for (int x = 0; x < testQuantity; x++)
             {
-                bool[] bdays = new bool[365];                
+                bool[] bdays = new bool[365];
                 for (int i = 1; i <= numberOfPeople; i++)
                 {
                     int temp = randy.Next(365);
@@ -174,10 +175,29 @@ namespace Exercises
                     {
                         bdays[temp] = true;
                     }
-                }                
+                }
             }
             double result = (double)count / (double)testQuantity;
-            Console.WriteLine("{0:P3}",result);
+            Console.WriteLine("{0:P3}", result);
+        }
+
+        public int WordCount(string input, string searchterm)
+        {
+            string[] source = input.Split(new char[] { '.', '?', '!', ' ', ';', ':', ',' }, StringSplitOptions.RemoveEmptyEntries);
+            var matchQuery = from word in source
+                             where word.ToLowerInvariant() == searchterm.ToLowerInvariant()
+                             select word;
+            return matchQuery.Count();
+        }
+
+        public Dictionary<string, int> EachWordCount(string input)
+        {
+            var result = input.Split(new[] { '.', '?', '!', ' ', ';', ':', ',' }, StringSplitOptions.RemoveEmptyEntries)
+                .GroupBy(w => w)
+                 .Select(g => new { g.Key, count = g.Count() })
+                 .ToDictionary(g => g.Key, g => g.count);
+
+            return result;
         }
     }
 }
