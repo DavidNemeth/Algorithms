@@ -46,18 +46,18 @@ namespace ArraysAndStrings
             }
         }
 
-        public void InsertionSort(int[] input)
+        public void InsertionSort(int[] data)
         {
-            for (int i = 1; i < input.Length; i++)
+            for (int i = 1; i < data.Length; i++)
             {
                 int j = i;
-                int toInsert = input[i];
-                while ((j > 0) && (input[j - 1] > toInsert))
+                int current = data[i];
+                while ((j > 0) && (data[j - 1] > current))
                 {
-                    input[j] = input[j - 1];
+                    data[j] = data[j - 1];
                     j--;
                 }
-                input[j] = toInsert;
+                data[j] = current;
             }
         }
     }

@@ -1,0 +1,6 @@
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Encryption\bin\Debug\Encryption.exe.config
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Encryption\bin\Debug\Encryption.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Encryption\bin\Debug\Encryption.pdb
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Encryption\obj\Debug\Encryption.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Encryption\obj\Debug\Encryption.exe
+C:\Users\David\Source\Repos\Algorithms\BasicAlgorithms\Encryption\obj\Debug\Encryption.pdb

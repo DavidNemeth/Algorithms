@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Progression", "Progression\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgsSixBookReinforcements", "AlgsSixBookReinforcements\AlgsSixBookReinforcements.csproj", "{C069468E-2CE7-4656-909C-50DED49034D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption", "Encryption\Encryption.csproj", "{1033917E-4E33-4C4D-B4A0-96EECD4FB171}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{C069468E-2CE7-4656-909C-50DED49034D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C069468E-2CE7-4656-909C-50DED49034D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C069468E-2CE7-4656-909C-50DED49034D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1033917E-4E33-4C4D-B4A0-96EECD4FB171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1033917E-4E33-4C4D-B4A0-96EECD4FB171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1033917E-4E33-4C4D-B4A0-96EECD4FB171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1033917E-4E33-4C4D-B4A0-96EECD4FB171}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
