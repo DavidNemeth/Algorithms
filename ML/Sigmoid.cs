@@ -1,10 +1,10 @@
 public double Sigmoid(double x)
 {
-    return 2 / (1 + Math.Exp(-2 * x)) - 1;
+    return 1 / (1 + Math.Exp(-x));
 }
 
 public double Derivative(double x)
 {
     double s = Sigmoid(x);
-    return 1 - (Math.Pow(s, 2));
+    return s * (1 - s);
 }
