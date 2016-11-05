@@ -1,0 +1,18 @@
+public class Synapse
+	{
+		#region -- Properties --
+		//public Neuron InputNeuron { get; set; } //TODO
+		//public Neuron OutputNeuron { get; set; } //TODO
+		public double Weight { get; set; }
+		public double WeightDelta { get; set; }
+		#endregion
+
+		#region -- Constructor --
+		public Synapse(Neuron inputNeuron, Neuron outputNeuron)
+		{
+			//InputNeuron = inputNeuron;
+			//OutputNeuron = outputNeuron;
+			Weight = Network.GetRandom();
+		}
+		#endregion
+	}
