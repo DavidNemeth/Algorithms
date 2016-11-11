@@ -1,0 +1,16 @@
+void Main()
+{
+	  string[] tokens_n = Console.ReadLine().Split(' ');
+    int n = Convert.ToInt32(tokens_n[0]);
+    int k = Convert.ToInt32(tokens_n[1]);
+    string[] a_temp = Console.ReadLine().Split(' ');
+    int[] a = Array.ConvertAll(a_temp,Int32.Parse);
+    
+    k++;
+    Array.Reverse(a, 0, k-1);
+	  Array.Reverse(a, k-1, n-k+1);
+	  Array.Reverse(a);
+        
+	  foreach(int item in a)
+        Console.Write($"{item} ");
+}
