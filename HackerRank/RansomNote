@@ -1,0 +1,40 @@
+void Main()
+{
+	string m = "give me one grand today night";
+	string r = "give one grand today";
+	
+	string[] magazine = m.Split(' ');
+	string[] ransom = r.Split(' ');
+	
+	if (Checkwords(magazine,ransom))
+		Console.WriteLine("Yes");
+	else
+		Console.WriteLine("No");
+	
+}
+
+public static bool Checkwords(string[] magazine, string[] ransom)
+{
+	Dictionary<string, int> table = new Dictionary<string, int>();
+	
+	foreach(string item in magazine)
+	{
+		if (!table.ContainsKey(item))
+			table[item] = 1;
+		else
+			table[item] += 1;
+	}
+	
+	foreach (string item in ransom)
+	{
+		if (!table.ContainsKey(item))
+			return false;
+			
+		else if (table[item] == 0)
+			return false;
+		
+		else
+			table[item] -=1;
+	}
+	 return true;
+}
