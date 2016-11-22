@@ -1,0 +1,28 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+class Solution {
+
+    static void Main(String[] args) {
+        string[] tokens_n = Console.ReadLine().Split(' ');
+        int n = Convert.ToInt32(tokens_n[0]);
+        int m = Convert.ToInt32(tokens_n[1]);
+        string[] a_temp = Console.ReadLine().Split(' ');
+        int[] a = Array.ConvertAll(a_temp,Int32.Parse);
+        string[] b_temp = Console.ReadLine().Split(' ');
+        int[] b = Array.ConvertAll(b_temp,Int32.Parse);
+        
+        int count = 0;
+        int min = a[0];
+        int max = b[m-1];
+        
+        for (int i = min; i <= max; i++)
+        {
+            if(a.All(t => i%t == 0) && b.All(t => t%i == 0))
+                count++;            
+        }
+        Console.WriteLine(count);
+    }
+}
