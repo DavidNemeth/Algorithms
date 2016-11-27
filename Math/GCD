@@ -1,0 +1,10 @@
+static long GCD(long a, long b) //greatest common divisor
+{
+    while (b != 0)
+    {
+        long temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
