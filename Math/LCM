@@ -1,0 +1,4 @@
+static long LCM(long a, long b) //least common multiple 
+{
+    return a / GCD(a, b) * b;
+}
