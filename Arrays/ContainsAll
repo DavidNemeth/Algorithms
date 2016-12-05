@@ -1,0 +1,22 @@
+static bool ContainsAll(string[] magazine, string[] rans)
+{
+    Dictionary<string, int> mag = new Dictionary<string, int>();    
+
+    foreach(var item in magazine)
+    {
+        if (!mag.ContainsKey(item))
+            mag.Add(item, 1);
+        else
+            mag[item]++;
+    }
+    foreach(var item in rans)
+    {
+        if (!mag.ContainsKey(item))
+            return false;
+        else if (mag[item] == 1)
+            mag.Remove(item);
+        else
+            mag[item]--;
+    }
+    return true;
+}       
