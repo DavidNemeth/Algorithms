@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+class Solution {
+
+    static void Main(String[] args) {
+        int t = Convert.ToInt32(Console.ReadLine());  
+        bool[] is_prime = MakeSieve();
+        long[] primesums = new long[1000000];    
+        primesums[0] = 0;
+        primesums[1] = 0;
+        primesums[2] = 2;
+        for (int i = 3; i < primesums.Length; i++)
+        {         
+            if(is_prime[i])
+                primesums[i] = primesums[i-1] + i;
+            else
+                primesums[i] = primesums[i-1];
+        }
+        for(int a0 = 0; a0 < t; a0++){
+            int n = Convert.ToInt32(Console.ReadLine());  
+            Console.WriteLine(primesums[n]);
+        }
+    }
+    static bool[] MakeSieve()
+    {   
+        int max = 1000000;
+        bool[] is_prime = new bool[max + 1];
+        for (int i = 2; i <= max; i++) is_prime[i] = true;
+        
+        for (int i = 2; i <= max; i++)
+        {
+            if (is_prime[i])
+            {                
+                for (int j = i * 2; j <= max; j += i)
+                    is_prime[j] = false;
+            }
+        }
+        return is_prime;
+    }    
+}
