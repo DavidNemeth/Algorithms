@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+class Solution
+{
+static void Main(String[] args) 
+{
+        int n = Convert.ToInt32(Console.ReadLine());
+        string[] a_temp = Console.ReadLine().Split(' ');
+        int[] a = Array.ConvertAll(a_temp,Int32.Parse);
+        int count = 0;
+        
+        Array.Sort(a);        
+        
+        Dictionary<int, int> pairs = new Dictionary<int, int>();    
+
+        foreach(var item in a)
+        {
+            if (!pairs.ContainsKey(item))
+                pairs.Add(item, 1);
+            else
+                pairs[item]++;
+        }
+        var maxKey = pairs.Aggregate((l, r) => l.Value > r.Value ? l : r).Key;       
+        var maxValue = pairs.Aggregate((l, r) => l.Value > r.Value ? l : r).Value;  
+        int count1 = 0;
+        int count2 = 0;
+        foreach (var pair in pairs)
+        {
+            if (pair.Key == maxKey - 1)  
+                count1 = pair.Value;
+            if (pair.Key == maxKey + 1) 
+                count2 = pair.Value;
+        }
+        if (count1 > count2)
+            count += count1;
+        else 
+            count += count2;
+          
+        count += maxValue;
+        Console.WriteLine(count);
+    }
+}
